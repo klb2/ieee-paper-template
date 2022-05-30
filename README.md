@@ -1,4 +1,4 @@
-# IEEE Paper Template
+# IEEE LaTeX Paper Template
 
 This repository contains a LaTeX template for research papers that are going to
 be submitted to IEEE journals or conferences.
@@ -49,3 +49,18 @@ template.
 It automatically includes the default information from `config.json` and copies
 all necessary files.
 Additionally, it initializes a Git repository and makes an initial commit.
+
+
+
+## Additional Information
+This template includes various custom commands and definitions:
+- `setup-colors.tex`: Custom color cycle for
+  [`pgfplots`](http://mirrors.ctan.org/graphics/pgf/contrib/pgfplots/doc/pgfplots.pdf)
+  which is both color-blind and grayscale friendly. Additional information and
+  examples can be found in the following blog post:
+  [https://klb2.gitlab.io/latex/writing/colors/2021/10/20/plot-colors.html](https://klb2.gitlab.io/latex/writing/colors/2021/10/20/plot-colors.html)
+- `setup-math.tex`: Custom math commands for commonly used functions/notation,
+  e.g., `\abs{x}` for the absolute value of `x`. Additional information and
+  examples can be found in the following blog post:
+  [https://klb2.gitlab.io/latex/2021/12/07/latex-commands.html](https://klb2.gitlab.io/latex/2021/12/07/latex-commands.html)
+- `setup-misc.tex`: Additional setups and style configurations.
