@@ -1,0 +1,37 @@
+\pgfplotsset{compat=newest}
+\usetikzlibrary{positioning,calc,external}
+
+\tikzexternalize[prefix=figures/]%, force remake]
+
+
+% Editing / Collab
+\newcommand{\todo}[2][]{
+	\if\relax\detokenize{#1}\relax
+	{\color{red}[TODO: #2]}%
+	\else
+	{\color{red}[TODO (#1): #2]}%
+	\fi
+}
+\newcommand{\note}[1]{{\color{orange} #1}}
+
+
+\theoremstyle{plain}% default  
+\newtheorem{thm}{Theorem}
+\newtheorem{cor}{Corollary}
+\newtheorem{lem}{Lemma}
+
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}%[section]
+\newtheorem{prob}{Problem}
+\newtheorem*{prob*}{Problem}
+%\newtheorem{example}{Example}
+%\newtheorem*{example*}{Example}
+
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\newtheorem*{rem*}{Remark}
+
+\newtheoremstyle{example}{\topsep}{\topsep}{}{}{\itshape}{.}{ }{}
+\theoremstyle{example}
+\newtheorem{example}{Example}
+\newtheorem*{example*}{Example}
