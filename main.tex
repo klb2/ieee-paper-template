@@ -1,0 +1,97 @@
+\documentclass[12pt,english,draftclsnofoot,onecolumn]{IEEEtran} % initial journal submission
+%\documentclass[10pt,journal,english,twocolumn]{IEEEtran} % journal two column
+%\documentclass[10pt,conference,english,twocolumn]{IEEEtran} % conference two column
+
+%% Language and Typesetting
+\usepackage{babel}
+\usepackage[babel]{microtype}
+\usepackage[babel]{csquotes}
+
+%% Graphics
+\usepackage[svgnames]{xcolor}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{pgfplots}
+
+%% Tables
+\usepackage{tabularx}
+\usepackage{booktabs}
+
+%% Math
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{bm}
+\usepackage{siunitx}
+\usepackage{mathtools}
+\usepackage{dsfont}
+
+%% Misc
+\usepackage[math]{blindtext}
+
+%% Bibliography
+\usepackage[backend=biber,url=false,style=ieee,dashed=false,isbn=false,doi=true]{biblatex}
+\bibliography{literature.bib}
+\renewcommand*{\bibfont}{\small}
+
+%% Hyperref
+\usepackage{hyperref}
+\hypersetup{
+	pdfauthor={},
+	pdftitle={},
+	bookmarksnumbered=true,
+	colorlinks=true,
+	allcolors=.,
+	urlcolor=MidnightBlue,
+}
+
+%% Glossary/Acronyms
+\usepackage[acronyms,nomain,xindy,nowarn]{glossaries}
+\makeglossaries
+\loadglsentries{acronyms.tex}
+\setacronymstyle{long-short}
+\glsdisablehyper
+
+%% SETUPS
+\input{setup-colors.tex}
+\input{setup-math.tex}
+\input{setup-misc.tex}
+
+
+
+
+%opening
+\title{{{title}}}
+\author{{{author}}
+%	\thanks{Parts of this work have been presented at the ...~\cite{...}.}
+	\thanks{{{affiliation}}}
+	\thanks{{{funding}}}
+}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}\noindent
+	\textcolor{blue}{\blindtext}
+\end{abstract}
+\begin{IEEEkeywords}
+	\todo{Keyword 1, Keyword 2, Keyword 3}.
+\end{IEEEkeywords}
+\glsresetall
+
+\section{Introduction}\label{sec:introduction}
+\todo{Add text...}
+
+\section{System Model and Problem Formulation}\label{sec:system-model}
+
+
+\todo{Add text... \cite{Tse2005}}
+\blinddocument
+
+
+\section{Conclusion}\label{sec:conclusion}
+\todo{Add text...}
+
+\printbibliography
+\end{document}
