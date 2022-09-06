@@ -5,14 +5,14 @@
 
 
 % Editing / Collab
-\newcommand{\todo}[2][]{
+\newcommand{\todo}[2][]{\ignorespaces
 	\if\relax\detokenize{#1}\relax
 	{\color{red}[TODO: #2]}%
 	\else
 	{\color{red}[TODO (#1): #2]}%
 	\fi
 }
-\newcommand{\note}[1]{{\color{orange} #1}}
+\newcommand{\note}[1]{\ignorespaces{\color{orange}#1}}
 
 
 \theoremstyle{plain}% default  
