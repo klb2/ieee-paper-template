@@ -40,7 +40,7 @@
 \renewcommand*{\bibfont}{\small}
 
 %% Hyperref
-\usepackage{hyperref}
+\usepackage[pdfusetitle]{hyperref}
 \hypersetup{
 	pdfauthor={},
 	pdftitle={},
@@ -100,6 +100,17 @@
 
 
 \todo{Add text... \cite{Tse2005}}
+\begin{thm}[Name of the Theorem]
+	\label{thm:important-theorem}
+	This is an important theorem.
+\end{thm}
+\begin{proof}
+	This is obvious.
+\end{proof}
+
+You can use the \verb*|\autoref{label}| command to refer to environments and sections like \autoref{thm:important-theorem}.
+This automatically adds the name of the environment.
+
 \blinddocument
 
 

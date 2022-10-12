@@ -23,9 +23,7 @@
 \theoremstyle{definition}
 \newtheorem{defn}{Definition}%[section]
 \newtheorem{prob}{Problem}
-\newtheorem*{prob*}{Problem}
-%\newtheorem{example}{Example}
-%\newtheorem*{example*}{Example}
+\newtheorem*{prob*}{Problem Statement}
 
 \theoremstyle{remark}
 \newtheorem{rem}{Remark}
@@ -35,3 +33,15 @@
 \theoremstyle{example}
 \newtheorem{example}{Example}
 \newtheorem*{example*}{Example}
+
+% Autoref Commands/Names
+\newcommand*{\thmautorefname}{Theorem}
+\newcommand*{\corautorefname}{Corollary}
+\newcommand*{\lemautorefname}{Lemma}
+\newcommand*{\probautorefname}{Problem}
+\newcommand*{\remautorefname}{Remark}
+\newcommand*{\exampleautorefname}{Example}
+\addto\extrasenglish{%
+	\renewcommand*{\sectionautorefname}{Section}
+	\renewcommand*{\subsectionautorefname}{Section}
+}
