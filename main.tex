@@ -60,6 +60,7 @@
 %% SETUPS
 \input{setup-colors.tex}
 \input{setup-math.tex}
+\input{setup-plots.tex}
 \input{setup-misc.tex}
 
 
@@ -110,6 +111,29 @@
 
 You can use the \verb*|\autoref{label}| command to refer to environments and sections like \autoref{thm:important-theorem}.
 This automatically adds the name of the environment.
+
+
+You can find an example plot in \autoref{fig:example} which uses the \texttt{betterplot} style, which is defined in this template.
+\begin{figure}[t]
+	\centering
+	\begin{tikzpicture}% function
+		\begin{axis}[
+			betterplot,
+			xlabel={Label $x$ Axis},
+			ylabel={Label $y$ Axis},
+			xmin=-5,
+			xmax=5,
+			]
+			\addplot+{sin(deg(x))};
+			\addlegendentry{$\sin(x)$};
+			\addplot+[samples=100]{sin(2*deg(x))};
+			\addlegendentry{$\sin(2x)$};
+		\end{axis}
+	\end{tikzpicture}
+	\caption{Example plot using the custom \texttt{betterplot} style}
+	\label{fig:example}
+\end{figure}
+
 
 \blinddocument
 
