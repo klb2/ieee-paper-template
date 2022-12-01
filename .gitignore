@@ -86,7 +86,7 @@ Pipfile.lock
 # these rules might exclude image files for figures etc.
 *.ps
 # *.eps
-#*.pdf
+*.pdf
 
 ## Generated if empty string is given at "Please type another file name for output:"
 .pdf
@@ -323,3 +323,5 @@ TSWLatexianTemp*
 
 # standalone packages
 *.sta
+
+config.json
