@@ -36,7 +36,7 @@ for i in "${replace[@]}"; do
 	echo "Replacing $i from $configFile"
 	replacement=$(jq -r ".$i" $configFile)
 	replacement=$(echo "$replacement" | sed 's/\\/\\\\/g')
-	sed -i -e 's/{{'"$i"'}}/'"$replacement"'/g' main.tex
+	sed -i -e 's={{'"$i"'}}='"$replacement"'=g' main.tex
 done
 git init
 git add .
