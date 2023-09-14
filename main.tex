@@ -1,5 +1,4 @@
-\documentclass[12pt,english,draftclsnofoot,onecolumn]{IEEEtran} % initial journal submission
-%\documentclass[10pt,journal,english,twocolumn]{IEEEtran} % journal two column
+\documentclass[10pt,journal,english,twocolumn]{IEEEtran} % journal two column
 %\documentclass[10pt,conference,english,twocolumn]{IEEEtran} % conference two column
 
 %% Language and Typesetting
@@ -112,9 +111,11 @@
 You can use the \verb*|\autoref{label}| command to refer to environments and sections like \autoref{thm:important-theorem}.
 This automatically adds the name of the environment.
 
+\blinddocument
 
+\section{Plots}
 You can find an example plot in \autoref{fig:example} which uses the \texttt{betterplot} style, which is defined in this template.
-\begin{figure}[t]
+\begin{figure}
 	\centering
 	\begin{tikzpicture}% function
 		\begin{axis}[
@@ -134,8 +135,6 @@ You can find an example plot in \autoref{fig:example} which uses the \texttt{bet
 	\label{fig:example}
 \end{figure}
 
-
-\blinddocument
 
 
 \section{Conclusion}\label{sec:conclusion}
