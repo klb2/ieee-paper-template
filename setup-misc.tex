@@ -54,3 +54,22 @@
 	\renewcommand*{\sectionautorefname}{Section}
 	\renewcommand*{\subsectionautorefname}{Section}
 }
+
+
+% Correct section spacing when using titlesec package
+\IfPackageLoadedTF{titlesec}{%
+	\ifCLASSOPTIONconference%
+	\titlespacing{\section}{0pt}{1.5ex plus 1.5ex minus 0.5ex}{0.7ex plus 1ex minus 0ex} %conference
+	\titlespacing{\subsection}{0pt}{1.5ex plus 1.5ex minus 0.5ex}{0.7ex plus .5ex minus 0ex} %conference
+	\else
+	\titlespacing{\section}{0pt}{3.0ex plus 1.5ex minus 1.5ex}{0.7ex plus 1ex minus 0ex} %journal
+	\titlespacing{\subsection}{0pt}{3.5ex plus 1.5ex minus 1.5ex}{0.7ex plus .5ex minus 0ex} %journal
+	\fi
+	\def\thesubsubsection{\thesubsection\arabic{subsubsection}}
+	\def\thesubsubsectiondis{\arabic{subsubsection})}
+	\def\theparagraphdis{\alph{paragraph})}
+	\titleformat{\subsubsection}[runin]{\normalfont\normalsize\itshape}{\thesubsubsectiondis}{.5em}{}[:]
+	\titlespacing*{\subsubsection}{\parindent}{0ex plus 0.1ex minus 0.1ex}{1ex}
+	\titleformat{\paragraph}[runin]{\normalfont\normalsize\itshape}{\theparagraphdis}{.5em}{}[:]
+	\titlespacing*{\paragraph}{2\parindent}{0ex plus 0.1ex minus 0.1ex}{1ex}
+}{}
