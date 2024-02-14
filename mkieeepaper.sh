@@ -17,6 +17,7 @@ strings=(
 	"acronyms.tex"
 	"literature.bib"
 	".gitignore"
+	"Makefile"
 )
 for i in "${strings[@]}"; do
     echo "Copying file: $i"
