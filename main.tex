@@ -34,15 +34,15 @@
 \usepackage[math]{blindtext}
 
 %% Bibliography
-\usepackage[backend=biber,url=false,style=ieee,dashed=false,isbn=false,doi=true]{biblatex}
+\usepackage[backend=biber,url=false,style=ieee,bibstyle=ieee-proc,dashed=false,isbn=false,doi=true]{biblatex}
 \bibliography{literature.bib}
 \renewcommand*{\bibfont}{\small}
 
 %% Hyperref
 \usepackage{hyperref}
 \hypersetup{
-	pdfauthor={},
-	pdftitle={},
+	pdfauthor={{{author}}},
+	pdftitle={{{title}}},
 	bookmarksnumbered=true,
 	colorlinks=true,
 	allcolors=.,
