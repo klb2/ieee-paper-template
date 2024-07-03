@@ -1,0 +1,43 @@
+\documentclass[letterpaper,DIV=11,english,parskip=half]{scrartcl}
+
+\usepackage{babel}
+\usepackage[babel]{microtype}
+\usepackage[babel]{csquotes}
+
+\usepackage[svgnames]{xcolor}
+
+\usepackage[backend=biber,url=false,style=ieee,bibstyle=ieee-proc,dashed=false,isbn=false,doi=true]{biblatex}
+\bibliography{literature.bib}
+
+\usepackage{hyperref}
+\hypersetup{
+	pdfauthor={{{author}}},
+	pdftitle={Previously Published Work},
+	bookmarksnumbered=true,
+	colorlinks=true,
+	allcolors=.,
+	urlcolor=MidnightBlue,
+	pdflang={en-US},
+}
+
+
+%opening
+\title{Previously Published Work}
+\author{{{author}}}
+
+
+
+\begin{document}
+\maketitle
+
+Parts of the submitted work were accepted for presentation at the \textcolor{red}{20XX Conference}~\cite{}.
+
+Results from~\cite{} can be found as parts of \textcolor{red}{Section~I, Section~II, and Section~III} in the submitted work.
+However, the new paper significantly extends the previous conference paper, including but not limited to the following points:
+\begin{enumerate}
+	\item Expanded review of existing relevant literature
+	\item \textcolor{red}{Add more points}
+\end{enumerate}
+
+\printbibliography
+\end{document}

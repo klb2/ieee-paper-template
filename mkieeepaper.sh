@@ -16,6 +16,8 @@ strings=(
 	"setup-*.tex"
 	"acronyms.tex"
 	"literature.bib"
+	"ieee-proc.bbx"
+	"previously-published-work.tex"
 	".gitignore"
 	"Makefile"
 )
