@@ -7,18 +7,22 @@
 \usetikzlibrary{positioning,calc,external}
 %\tikzexternalize[prefix=figures/]%, force remake]
 
+\sisetup{
+	mode=match,
+	reset-math-version=false,
+}
 
 % Editing / Collab
-\newcommand{\todo}[2][]{\ignorespaces
+\newcommand{\todo}[2][]{\ignorespaces\leavevmode
 	\if\relax\detokenize{#1}\relax
 	{\color{red}[TODO: #2]}%
 	\else
 	{\color{red}[TODO (#1): #2]}%
 	\fi
 }
-\newcommand{\note}[1]{\ignorespaces{\color{orange}#1}}
+\newcommand{\note}[1]{\ignorespaces\leavevmode{\color{orange}#1}}
 \definecolor{change}{HTML}{0096b8}
-\newcommand{\change}[1]{\ignorespaces{\color{change}#1}}
+\newcommand{\change}[1]{\ignorespaces\leavevmode{\color{change}#1}}
 %
 
 
