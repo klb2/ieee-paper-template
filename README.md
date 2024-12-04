@@ -57,13 +57,13 @@ This template includes various custom commands and definitions:
 - [`setup-colors.tex`](setup-colors.tex): Custom colors for color cycles
   which is both color-blind and grayscale friendly. Additional information and
   examples can be found in the following blog post:
-  [https://klb2.gitlab.io/latex/writing/colors/2021/10/20/plot-colors.html](https://klb2.gitlab.io/latex/writing/colors/2021/10/20/plot-colors.html)
+  [https://klb2.gitlab.io/2021/10/20/plot-colors.html](https://klb2.gitlab.io/2021/10/20/plot-colors.html)
 - [`setup-plots.tex`](setup-plots.tex): Custom styles for plots that are
   created using
   [`pgfplots`](http://mirrors.ctan.org/graphics/pgf/contrib/pgfplots/doc/pgfplots.pdf)
 - [`setup-math.tex`](setup-math.tex): Custom math commands for commonly used
   functions/notation, e.g., `\abs{x}` for the absolute value of `x`. Additional
   information and examples can be found in the following blog post:
-  [https://klb2.gitlab.io/latex/2021/12/07/latex-commands.html](https://klb2.gitlab.io/latex/2021/12/07/latex-commands.html)
+  [https://klb2.gitlab.io/2021/12/07/latex-commands.html](https://klb2.gitlab.io/2021/12/07/latex-commands.html)
 - [`setup-misc.tex`](setup-misc.tex): Additional setups and style
   configurations.
