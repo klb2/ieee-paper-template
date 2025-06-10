@@ -12,14 +12,15 @@ mkdir -p "$newPaperDir"
 mkdir "$newPaperDir/figures"
 
 strings=(
-	"main.tex"
-	"setup-*.tex"
-	"acronyms.tex"
-	"literature.bib"
-	"ieee-proc.bbx"
-	"previously-published-work.tex"
-	".gitignore"
-	"Makefile"
+  "main.tex"
+  "setup-*.tex"
+  "acronyms.tex"
+  "literature.bib"
+  "ieee-proc.bbx"
+  "previously-published-work.tex"
+  ".gitignore"
+  "Makefile"
+  "remove_change_markings.sh"
 )
 for i in "${strings[@]}"; do
     echo "Copying file: $i"
