@@ -3,6 +3,7 @@
 
 %% Language and Typesetting
 \usepackage{babel}
+\setlocalecaption{english}{table}{TABLE}
 \usepackage[babel]{microtype}
 \usepackage{csquotes}
 
@@ -80,13 +81,13 @@
 \begin{abstract}\noindent\boldmath
 	\todo{Four sentences:}
 	\color{blue}
-	
+
 	1) State the problem.
-	
+
 	2) Say why it is an interesting problem.
-	
+
 	3) Say what your solution achieves.
-	
+
 	4) Say what follows from your solution.
 \end{abstract}
 \begin{IEEEkeywords}
@@ -136,6 +137,24 @@ You can find an example plot in \autoref{fig:example} which uses the \texttt{bet
 	\label{fig:example}
 \end{figure}
 
+
+\section{Tables}
+You should use the \texttt{booktabs} package to produce nice looking tables.
+An example can be found in \autoref{tab:example-table}.
+
+\begin{table}
+	\centering
+	\caption{Captions go above tables}
+	\label{tab:example-table}
+	\begin{tabularx}{.97\linewidth}{XX}
+		\toprule
+		\textbf{Column~1} & \textbf{Column~2}\\
+		\midrule
+		First row, first column & First row, second column\\
+		Second row, first column & Second row, second column\\
+		\bottomrule
+	\end{tabularx}
+\end{table}
 
 
 \section{Conclusion}\label{sec:conclusion}
