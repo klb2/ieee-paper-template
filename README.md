@@ -8,18 +8,23 @@ class](http://mirrors.ctan.org/macros/latex/contrib/IEEEtran/IEEEtran_HOWTO.pdf)
 Additionally, there is a bash script that helps setting up a new document.
 
 ## Usage
+
+### On GitHub
+Click on ["Use this template"](https://github.com/new?template_name=ieee-paper-template&template_owner=klb2).
+
+### Local Installation
 You can simply copy all the files in the repository and start writing your
 document in `main.tex`.
 
-If you want to use the generator script, follow the following steps
+If you want to use the generator script, follow the following steps:
 
-### 0. Requirements
+#### 0. Requirements
 The following software is required
 - Bash
 - [jq](https://stedolan.github.io/jq/)
 - Git
 
-### 1. Installation
+#### 1. Installation
 ```bash
 # Clone the git repository
 git clone https://github.com/klb2/ieee-paper-template.git
@@ -27,7 +32,7 @@ git clone https://github.com/klb2/ieee-paper-template.git
 ln -s $(realpath ieee-paper-template/mkieeepaper.sh) "$HOME/.local/bin/"
 ```
 
-### 2. Custom Default Values
+#### 2. Custom Default Values
 You can create a config file with custom values that are used for initializing
 the paper.
 Create the file `config.json` in `ieee-paper-template/` with the following
@@ -40,7 +45,7 @@ content (replace with your values as needed)
 }
 ```
 
-### 3. Initialize New Paper
+#### 3. Initialize New Paper
 ```bash
 mkieeepaper name-of-the-paper-directory
 ```
