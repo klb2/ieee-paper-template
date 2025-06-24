@@ -51,11 +51,43 @@ all necessary files.
 Additionally, it initializes a Git repository and makes an initial commit.
 
 
+## Revisions and Highlighting Changes
+Typically, you want to highlight changes that you made when revising the paper
+and resubmitting it to a journal.
+For this, you can use the `\change{...}` command, which sets its content in the
+`change` color, which is defined in [`setup-misc.tex`](setup-misc.tex).
+
+A revised version could therefore look something like the following example:
+```latex
+This is a sentences, \change{to which we added additional information in the revised version}.
+
+\change{%
+The change command accepts paragraphs and floats, e.g., figures.
+
+\begin{figure}
+\includegraphics{...}
+\caption{We added this figure in the revised version}
+\end{figure}
+}
+```
+
+### Automatically Removing Change Markings
+After your paper has been accepted (or if you need to do a second revision),
+you need to remove the change markings.
+If you used the `\change` command to highlight the changes, you can use the
+[`remove_change_markings.sh`](remove_change_markings.sh) script to quickly
+remove them from a given TeX file.
+Simply call the script with the TeX file as an argument, e.g.,
+```bash
+bash remove_change_markings.sh main.tex
+```
+
 
 ## Additional Information
 This template includes various custom commands and definitions:
 - [`setup-colors.tex`](setup-colors.tex): Custom colors for color cycles
-  which is both color-blind and grayscale friendly. Additional information and
+  which is both color-blind and grayscale friendly. They were proposed by [Paul
+  Tol](https://sronpersonalpages.nl/~pault/). Additional information and
   examples can be found in the following blog post:
   [https://klb2.gitlab.io/2021/10/20/plot-colors.html](https://klb2.gitlab.io/2021/10/20/plot-colors.html)
 - [`setup-plots.tex`](setup-plots.tex): Custom styles for plots that are
