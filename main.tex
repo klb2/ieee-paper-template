@@ -23,13 +23,12 @@
 \usepackage{booktabs}
 
 %% Math
-\usepackage{amsmath}
+\usepackage{mathtools}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{amsthm}
 \usepackage{bm}
 \usepackage{siunitx}
-\usepackage{mathtools}
 \usepackage{dsfont}
 
 %% Misc
@@ -156,6 +155,13 @@ An example can be found in \autoref{tab:example-table}.
 		\bottomrule
 	\end{tabularx}
 \end{table}
+
+\section{Formulas}
+You can use the pre-defined macros to typeset constants, such as~$\e$, and operators, such as the differential~$\diff$, in the roman shape.
+\begin{align*}
+	H &= 0.5 \log(2\pi\e)\\
+	f(x) &= \int_{x}^{\infty} d(y)\e^{-\imag y} \diff{y}
+\end{align*}
 
 
 \section{Conclusion}\label{sec:conclusion}
