@@ -14,7 +14,6 @@ mkdir "$newPaperDir/figures"
 strings=(
   "main.tex"
   "setup-*.tex"
-  "acronyms.tex"
   "literature.bib"
   "ieee-proc.bbx"
   "previously-published-work.tex"
